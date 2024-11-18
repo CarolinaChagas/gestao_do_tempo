@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão do Tempo</title>
+    <meta name="description" content="Sistema de Gestão de Tempo para Acadêmicos Universitários" />
+    <meta name="author" content="Carolina Chagas" />
+    <link rel="shortcut icon" href="c.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas Acadêmicas</h1>
+        <button id="escolherTema"></button>
+    </header>
+
+    <main>
+        <section id="tarefasSection">
+            <input type="text" id="novaTarefa" placeholder="Adicionar Nova Tarefa" aria-label="Nova tarefa" tabindex="0">
+            <button id="adicionarTarefa" aria-label="Adicionar Tarefa" tabindex="0">Adicionar</button>
+        </section>
+        <section id="kanbanBoard">
+            <div class="kanbanColumn" id="toDo">
+                <h2>To Do</h2>
+                <ul id="toDoList"></ul>
+            </div>
+            <div class="kanbanColumn" id="doing">
+                <h2>Doing</h2>
+                <ul id="doingList"></ul>
+            </div>
+            <div class="kanbanColumn" id="done">
+                <h2>Done</h2>
+                <ul id="doneList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os Direitos Reservados &copy; 2024</p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
